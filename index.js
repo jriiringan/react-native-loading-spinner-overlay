@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
 const ANIMATION = ['none', 'slide', 'fade'];
 const SIZES = ['small', 'normal', 'large'];
 
-export default class Spinner extends React.PureComponent {
+class Spinner extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -165,3 +165,5 @@ export default class Spinner extends React.PureComponent {
     return this._renderSpinner();
   }
 }
+
+export { Spinner };
